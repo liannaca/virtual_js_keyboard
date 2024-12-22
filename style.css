@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* Контейнер будет по центру экрана */
+}
+h1 {
+    max-width: 70%;
+    text-align: center;
+}
+.keyboard {
+    border: 1px solid slategray;
+    padding: 5px;
+    border-radius: 4px;
+    margin-top: 20px;
+    position: relative;
+    width: 810px;
+}
+.line:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.key {
+    float: left;
+    width: 40px;
+    height: 40px;
+    background: rgba(139, 206, 127, 0.47);
+    border: 1px solid slategray;
+    padding: 4px;
+    margin: 3px;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+.key:hover {
+    color: #fff;
+    background: slategray;
+    cursor: pointer;
+}
+.active {
+    background: slategray;
+}
+.letter-key {
+    font-size: 10px;
+    line-height: auto;
+}
+.backspace {
+    width: 70px;
+}
+.tab {
+    width: 52px;
+}
+.capslock {
+    width: 107px;
+}
+.lshift,
+.rshift {
+    width: 111px;
+}
+.rctrl,
+.lctrl {
+    width: 69px;
+}
+.space {
+    width: 346px;
+}
+.window {
+    width: 20px;
+    padding-top: 5px;
+}
+.enter {
+    position: absolute;
+    right: 11px;
+    top: 61px;
+    width: 57px;
+    height: 94px;
+}
+.key-output {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    min-height: 40px;
+    font-size: 18px;
+    font-family: monospace;
+    width: 100%;
+    /* Адаптивная ширина */
+    max-width: 810px;
+    /* Ограничение на больших экранах */
+}
